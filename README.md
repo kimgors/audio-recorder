@@ -23,11 +23,11 @@ npm install vue-audio-recorder-waveform
 ```javascript
 import { createApp } from 'vue';
 import App from './App.vue';
-import VueAudioRecorder from 'vue-audio-recorder-waveform';
+import AudioRecorder from 'vue-audio-recorder-waveform';
 import 'vue-audio-recorder-waveform/dist/audio-recorder.css';
 
 const app = createApp(App);
-app.use(VueAudioRecorder);
+app.use(AudioRecorder);
 app.mount('#app');
 ```
 
