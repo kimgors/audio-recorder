@@ -86,9 +86,6 @@ The main component for recording audio.
 
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| question | Object | required | Question object associated with the recording |
-| lessonId | Number | required | ID of the lesson |
-| courseId | Number | required | ID of the course |
 | showSaveButton | Boolean | false | Whether to show a save button |
 
 #### Events
