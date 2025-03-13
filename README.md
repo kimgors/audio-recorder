@@ -13,7 +13,7 @@ A Vue 3 audio recorder component with waveform visualization.
 ## Installation
 
 ```bash
-npm install vue-audio-recorder-component
+npm install vue-audio-recorder-waveform
 ```
 
 ## Usage
@@ -23,8 +23,8 @@ npm install vue-audio-recorder-component
 ```javascript
 import { createApp } from 'vue';
 import App from './App.vue';
-import VueAudioRecorder from 'vue-audio-recorder-component';
-import 'vue-audio-recorder-component/dist/audio-recorder.css';
+import VueAudioRecorder from 'vue-audio-recorder-waveform';
+import 'vue-audio-recorder-waveform/dist/audio-recorder.css';
 
 const app = createApp(App);
 app.use(VueAudioRecorder);
@@ -34,14 +34,15 @@ app.mount('#app');
 ### Register locally
 
 ```javascript
-import { AudioRecorder } from 'vue-audio-recorder-component';
-import 'vue-audio-recorder-component/dist/audio-recorder.css';
+import { AudioRecorder } from 'vue-audio-recorder-waveform';
+import 'vue-audio-recorder-waveform/dist/audio-recorder.css';
 
 export default {
   components: {
     AudioRecorder
   }
 }
+
 ```
 
 ### Basic usage
@@ -49,9 +50,6 @@ export default {
 ```html
 <template>
   <AudioRecorder 
-    :question="question"
-    :lesson-id="lessonId"
-    :course-id="courseId"
     :show-save-button="true"
     @recording-complete="handleRecordingComplete"
   />
@@ -61,9 +59,6 @@ export default {
 export default {
   data() {
     return {
-      question: { id: 1, text: 'Recording question' },
-      lessonId: 101,
-      courseId: 5
     }
   },
   methods: {
@@ -92,7 +87,7 @@ The main component for recording audio.
 
 | Name | Parameters | Description |
 |------|------------|-------------|
-| recording-complete | { file, question } | Emitted when recording is completed and saved |
+| recording-complete | { file } | Emitted when recording is completed and saved |
 | update-save-button | Boolean | Emitted when save button state should update |
 
 ### CustomWaveForm

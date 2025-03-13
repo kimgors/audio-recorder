@@ -1,6 +1,6 @@
 {
   "name": "vue-audio-recorder-waveform",
-  "version": "0.8.1",
+  "version": "0.8.3",
   "description": "A lightweight and easy-to-use Vue 3 component for recording, playing, and exporting audio directly in the browser",
   "main": "index.js",
   "module": "dist/index.esm.js",
